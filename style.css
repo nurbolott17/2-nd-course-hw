@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -21,12 +25,10 @@ a {
   background-image: url(img/bigstar.png), url(img/star2.svg), url(img/star3.svg), url(img/star5.svg), url(img/star4.svg);
   background-position: right 0px top 0px, 63px 94px, 156px 69px, right 344px bottom 149px, right 455px bottom 225px;
   background-repeat: no-repeat;
-}
-.top__content {
   padding-top: 196px;
+  padding-bottom: 156px;
 }
-
-.content__title {
+.top__title {
   font-size: 64px;
   font-weight: 700;
   line-height: 78px;
@@ -35,7 +37,7 @@ a {
   color: rgb(32, 32, 39);
   padding-bottom: 24px;
 }
-.content__text {
+.top__text {
   color: rgb(32, 32, 39);
   font-size: 24px;
   font-weight: 400;
@@ -44,7 +46,7 @@ a {
   text-align: left;
   padding-bottom: 48px;
 }
-.content__link {
+.top__link {
   box-sizing: border-box;
   border: 1px solid rgb(32, 32, 39);
   border-radius: 60px;
@@ -60,26 +62,24 @@ a {
   color: rgb(255, 255, 255);
   transition: 1s;
 }
-.content__link:hover {
+.top__link:hover {
   color: #000;
   background-color: rgb(255, 255, 255);
   transition: 1s;
 }
 
 .animation {
-  margin-top: 156px;
   height: 90px;
   background-color: rgb(188, 236, 48);
 }
 
-.for {
+.content {
   background-color: #202027;
   background-image: url(img/Star\ 1.png), url(img/Star\ 11.png), url(img/Star\ 12.png);
   background-position: right 0px top 77px, 25px 770px, 40px 822px;
   background-repeat: no-repeat;
 }
-
-.information__heading {
+.content__heading {
   color: rgb(255, 255, 255);
   font-size: 64px;
   font-weight: 700;
@@ -88,7 +88,7 @@ a {
   text-align: left;
   padding-top: 94px;
 }
-.information__text {
+.content__text {
   color: rgb(255, 255, 255);
   padding-top: 24px;
   font-size: 24px;
@@ -98,42 +98,42 @@ a {
   text-align: left;
 }
 
-.games {
-  padding-bottom: 144px;
+.cards {
+  padding-bottom: 96px;
   padding-top: 72px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   gap: 32px;
 }
-.games__game-link {
+.cards__link {
   border-radius: 30px;
   grid-column: span 4;
   grid-row: span 6;
 }
-.games__game-link_big {
+.cards__link_big {
   grid-row: span 7;
 }
-.games__game-link_small {
+.cards__link_small {
   grid-row: span 5;
 }
 
-.game {
+.card {
   border-radius: 30px;
   background-color: rgb(255, 255, 255);
   transition: 1s;
 }
-.game:hover {
+.card:hover {
   transform: scale(1.1);
   transition: 1s;
 }
-.game__imeg {
+.card__imeg {
   max-width: 100%;
 }
-.game__info {
+.card__info {
   padding: 32px 32px 32px 36px;
 }
-.game__number {
+.card__number {
   background-color: rgb(247, 247, 247);
   width: 79px;
   padding: 16px 8px 16px 10px;
@@ -146,7 +146,7 @@ a {
   height: 18px;
   border-radius: 52px;
 }
-.game__name {
+.card__name {
   padding-top: 16px;
   color: rgb(32, 32, 39);
   font-size: 32px;
@@ -156,15 +156,13 @@ a {
   text-align: left;
 }
 
-.main {
+.section-games {
   background-image: url(./img/star7.png), url(./img/star6.png), url(./img/Star8.png), url(./img/Star10.png);
   background-position: right 123px top 93px, right 44px top 126px, bottom 65px right 53px, bottom 45px right 141px;
   background-repeat: no-repeat;
   background-color: rgb(32, 32, 39);
 }
-
-.block-games__heading {
-  padding-top: 46px;
+.section-games__heading {
   padding-bottom: 72px;
   font-size: 64px;
   font-weight: 700;
@@ -174,30 +172,25 @@ a {
   color: rgb(255, 255, 255);
 }
 
-.list-games {
+.games {
   display: flex;
   flex-direction: column;
   gap: 32px;
   padding-bottom: 144px;
 }
 
-.list-games__link {
-  border-radius: 30px;
-}
-
-.play {
+.game {
   border-radius: 30px;
   background-color: #fff;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
-.play-info {
+.game__info {
   padding: 48px;
   width: 600px;
 }
-.play-info__name {
+.game__name {
   padding-bottom: 24px;
   font-size: 48px;
   font-weight: 700;
@@ -206,7 +199,7 @@ a {
   text-align: left;
   color: rgb(32, 32, 39);
 }
-.play-info__description {
+.game__description {
   padding-bottom: 36px;
   font-size: 24px;
   font-weight: 400;
@@ -215,7 +208,7 @@ a {
   text-align: left;
   color: rgb(32, 32, 39);
 }
-.play-info__btn {
+.game__btn {
   font-family: inherit;
   width: 247px;
   height: 66px;
@@ -229,7 +222,7 @@ a {
   color: rgb(255, 255, 255);
   transition: 1s;
 }
-.play-info__btn:hover {
+.game__btn:hover {
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(0, 0, 0);
   color: #000;
@@ -261,14 +254,10 @@ a {
     background-image: url(img/Vector.png), url(img/mobilstar2.png), url(img/mobilstar3.png), url(img/mobil.png), url(img/mobilstar5.png);
     background-position: right 0px top 0px, 37px 97px, 91px 64px, right 34px bottom 79px, right 86px bottom 125px;
     background-repeat: no-repeat;
-  }
-  .top__content {
     padding-top: 147px;
+    padding-bottom: 131px;
   }
-  .content {
-    padding-top: 147px;
-  }
-  .content__title {
+  .top__title {
     font-size: 40px;
     font-weight: 700;
     line-height: 49px;
@@ -277,7 +266,7 @@ a {
     color: rgb(32, 32, 39);
     padding-bottom: 24px;
   }
-  .content__text {
+  .top__text {
     color: rgb(32, 32, 39);
     font-size: 16px;
     font-weight: 400;
@@ -286,11 +275,11 @@ a {
     text-align: center;
     padding-bottom: 36px;
   }
-  .content__link-box {
+  .top__link-box {
     display: flex;
     justify-content: center;
   }
-  .content__link {
+  .top__link {
     box-sizing: border-box;
     border: 1px solid rgb(32, 32, 39);
     border-radius: 60px;
@@ -306,41 +295,41 @@ a {
     color: rgb(255, 255, 255);
   }
   .animation {
-    margin-top: 131px;
     height: 51px;
     background-color: rgb(188, 236, 48);
   }
-  .for {
+  .content {
     display: none;
   }
-  .main {
+  .section-games {
     background-image: none;
   }
-  .list-games {
-    padding-bottom: 48px;
-    gap: 24px;
-  }
-  .block-games__heading {
+  .section-games__heading {
     padding-top: 48px;
     padding-bottom: 48px;
     font-size: 40px;
     font-weight: 700;
     line-height: 49px;
   }
-  .play {
+  .games {
+    padding-bottom: 48px;
+    gap: 24px;
+  }
+  .game {
     display: flex;
     flex-direction: column;
   }
-  .play__imeg_1 {
+  .game__imeg {
+    max-height: 284px;
+  }
+  .game__imeg_1 {
     order: -1;
   }
-  .play-info {
-    grid-row: auto;
-    grid-column: auto;
-    padding: 16px;
+  .game__info {
+    padding: 29px;
     width: auto;
   }
-  .play-info__name {
+  .game__name {
     padding-bottom: 16px;
     font-size: 32px;
     font-weight: 700;
@@ -348,7 +337,7 @@ a {
     letter-spacing: 0px;
     text-align: left;
   }
-  .play-info__description {
+  .game__description {
     padding-bottom: 32px;
     font-size: 16px;
     font-weight: 400;
@@ -356,8 +345,8 @@ a {
     letter-spacing: 0px;
     text-align: left;
   }
-  .play-info__btn {
-    width: 255px;
+  .game__btn {
+    width: 285px;
     height: 55px;
     font-size: 16px;
     font-weight: 600;
@@ -383,25 +372,23 @@ a {
   .top {
     background-image: url(img/Vector.png), url(img/star2.svg), url(img/star3.svg), url(img/star5.svg), url(img/star4.svg);
     background-position: right 0px top 0px, 43px 64px, 116px 49px, right 200px bottom 130px, right 255px bottom 155px;
-  }
-  .top__content {
     padding-top: 190px;
   }
-  .for {
+  .section-games {
     background-image: url(img/Star\ 11.png), url(img/Star\ 12.png);
     background-position: 25px 770px, 40px 822px;
   }
-  .games {
+  .cards {
     padding-bottom: 50px;
   }
-  .list-games {
+  .games {
     padding-bottom: 100px;
   }
-  .block-games__heading {
+  .content__heading {
     padding-top: 26px;
     padding-bottom: 32px;
   }
-  .play__imeg {
-    max-width: 350px;
+  .game__imeg {
+    max-width: 400px;
   }
 }/*# sourceMappingURL=style.css.map */

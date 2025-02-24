@@ -31,7 +31,7 @@ for (let key in obj) {
 }
 
 // Задание 5
-let n = Number(1000);
+const n = 1000;
 let num = 0;
 while (n >=50){console.log(n , num)
     n/=2,

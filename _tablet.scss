@@ -6,28 +6,26 @@
     .top{
         background-image:url(img/Vector.png), url(img/star2.svg),url(img/star3.svg),url(img/star5.svg),url(img/star4.svg);
         background-position: right 0px top 0px, 43px 64px, 116px 49px, right 200px bottom 130px, right 255px bottom 155px;
-        
-    }
-    .content{
         padding-top: 190px;
     }
-    .for{
+    
+    .section-games{
         background-image:url(img/Star\ 11.png),url(img/Star\ 12.png) ;
         background-position:  25px 770px, 40px 822px;
     }
-    .games{
+    .cards{
         padding-bottom: 50px;
     }
-    .list-games{
+    .games{
         padding-bottom: 100px;
     }
-    .block-games__heading{
+    .content__heading{
         padding-top: 26px;
         padding-bottom: 32px;
     }
-    .play{
+    .game{
         &__imeg{
-            max-width: 350px;
+            max-width: 400px;
         }
     }
 }
