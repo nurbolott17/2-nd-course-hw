@@ -7,10 +7,8 @@ while (i < a.length) {
     console.log(a[i])
     if (a[i] === 10) {
         break;
-    } else {
-        
     }   
-}
+}   
 
 // Задание 2
 i = 0
@@ -21,9 +19,7 @@ while (i < b.length ) {
         console.log(i)
         break;
         
-    } else {
-        
-    }   
+    } 
 }
 // Задание 3
 const c = [1, 3, 5, 10, 20]
