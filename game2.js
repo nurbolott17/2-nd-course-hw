@@ -1,15 +1,11 @@
 
 function examples() {
-    let a =  Math.floor((Math.random() * 100) + 1);
+    let a =  Math.floor((Math.random() * 100));
     let b =  Math.floor((Math.random() * 100) + 1);
     const rand = ['+','-','*','/'];
-    function getRandomSing(rand) {
-        let randomSing = Math.floor(Math.random() * rand.length) ;
-        return randomSing; 
-    }
-    let randomSing = getRandomSing(rand);
-    function results() {
-        let result = 'Это не числе'
+    let randomSing = Math.floor(Math.random() * rand.length) ;
+    function getResult() {
+        let result ;
         if (randomSing === 0) {
             result = a + b;
             
@@ -24,24 +20,28 @@ function examples() {
         }
         return result;
     }
-    console.log(results())
-
+    console.log(getResult())
     let example = `${a} ${rand[randomSing]} ${b}`
     let userAnswer = parseInt(prompt(`Напишите ответ для задачи : ${example}`));
-    let result = parseInt(results())
-    while ((userAnswer) !== result){
+    let result = parseInt(getResult())
+    while (userAnswer !== result){
         if (userAnswer === result) {
             break;
-        } else if (userAnswer !== result){
-            userAnswer = parseInt(prompt(userAnswer + ` Не правильно, попробуй еще "${example}"`));
+         
         }
-        else  if (userAnswer === null){
-            console.log('Пользователь отменил игру')
-            break;
+        else if (!userAnswer){
+            alert('Пользователь отменил игру')
+            return;
             
         }
-        else if (userAnswer !== Number){
-            userAnswer = parseInt(prompt(userAnswer + `Ответ должен быть числом!!!`))
+        else if (isNaN(userAnswer)) {
+            if (true) {
+                userAnswer = parseInt(prompt(userAnswer + `Ответ должен быть числом!!!`));
+            }
+           
+        }
+        else if (userAnswer !== result){
+            userAnswer = parseInt(prompt(userAnswer + ` Не правильно, попробуй еще "${example}"`));
         }
     } 
     alert('Молодец, ты решил правильно');   
