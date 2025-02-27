@@ -22,26 +22,23 @@ function examples() {
     }
     console.log(getResult())
     let example = `${a} ${rand[randomSing]} ${b}`
-    let userAnswer = parseInt(prompt(`Напишите ответ для задачи : ${example}`));
+    let userAnswer = prompt(`Напишите ответ для задачи : ${example}`);
     let result = parseInt(getResult())
     while (userAnswer !== result){
         if (userAnswer === result) {
             break;
          
         }
-        else if (!userAnswer){
+        else if (userAnswer === null){
             alert('Пользователь отменил игру')
             return;
             
         }
-        else if (isNaN(userAnswer)) {
-            if (true) {
-                userAnswer = parseInt(prompt(userAnswer + `Ответ должен быть числом!!!`));
-            }
-           
+        else if (isNaN(parseInt(userAnswer))) {
+            userAnswer = prompt(userAnswer + " - Это не число, ответ должен быть числом!!!") 
         }
         else if (userAnswer !== result){
-            userAnswer = parseInt(prompt(userAnswer + ` Не правильно, попробуй еще "${example}"`));
+            userAnswer = prompt(userAnswer + ` Не правильно, попробуй еще "${example}"`);
         }
     } 
     alert('Молодец, ты решил правильно');   
