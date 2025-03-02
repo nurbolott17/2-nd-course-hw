@@ -26,8 +26,8 @@ function quizGame() {
         if (parseInt(userAnswer) === quiz[a].correctAnswer || userAnswer.toLowerCase() === userCorrectAnswer[a].toLowerCase()) {
             i++;
             a++;
-        } else {    
-            a++;        
+        } else if (userAnswer === null){    
+            alert('Игра отменена ');        
             }
         }
         alert(`Правильных ответов у тебя - ${i}`)
