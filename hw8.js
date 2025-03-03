@@ -41,55 +41,50 @@ const people = [
 console.log(filter(people, isMale));
 
 
-// Критерии оценки
-// Подсказка
-
 // Задание 3
 // Напишите программу, которая на протяжении 30 секунд каждые 3 секунды будет выводить в консоль текущую дату. Последней строкой должно выводиться сообщение «30 секунд прошло».
+const intervalid = setInterval(() => {
+    console.log('hello')
+}, 3000);
 
+setTimeout(() => {
+    clearInterval(intervalid);
+    console.log('Время прошло');
 
-// Критерии оценки
-// Подсказка
+}, 7000);
+
 
 // Задание 4
 // Сейчас код ниже выводит в консоль «Привет, Глеб!» сразу после запуска.
 
-// Допишите функцию 
-// delayForSecond
-//  так, чтобы приветствие выводилось в консоль не сразу, а спустя 1 секунду. Используйте 
-// setTimeout
+//
 // .
 
-// function delayForSecond(callback) {
-//     // Код писать можно только внутри этой функции
-//    callback();
-// }
+function delayForSecond(callback) {
+   setTimeout(callback, 2000);
+}
 
-// delayForSecond(function () {
-//    console.log('Привет, Глеб!');
-// })
+delayForSecond(function () {
+   console.log('Привет, Глеб!');
+})
 
 
-// Критерии оценки
 
 // Задание 5
-// Посмотрите код. В нём допущена ошибка, и он выводит сообщения не в том порядке:
 
-// // Функция delayForSecond через 1 секунду пишет в консоль 
-// // «Прошла одна секунда», а затем вызывает переданный колбэк
-// function delayForSecond(cb) {
-//     setTimeout(() => {
-//         console.log('Прошла одна секунда');
-//         if(cb) {  cb(); }
-//     }, 1000)
-// }
+function delayForSecond(cb) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+        if(cb) {  cb(); }
+    }, 1000)
+}
 
-// Функция sayHi выводит в консоль приветствие для указанного имени
-// function sayHi (name) {
-//     console.log('Привет, ${name}!');
-// }
+
+function sayHi (name) {
+    console.log(`Привет, ${name}!`);
+}
 
 // // Код выше менять нельзя
 
-// // Нужно изменить код ниже:
-// delayForSecond(sayHi('Глеб'))
+
+delayForSecond(sayHi('Глеб'))
