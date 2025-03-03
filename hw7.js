@@ -3,7 +3,7 @@
 // 'js'
 //  в верхний регистр.
 
-'js'.toLowerCase()
+// 'js'.toLowerCase()
 
 
 // Задание 2
