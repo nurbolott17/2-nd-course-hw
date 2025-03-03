@@ -23,11 +23,16 @@ function quizGame() {
         let userAnswer = prompt(`         ${quiz[a].question} 
             ${quiz[a].options}` 
         );
-        if (parseInt(userAnswer) === quiz[a].correctAnswer || userAnswer.toLowerCase() === userCorrectAnswer[a].toLowerCase()) {
+        if (userAnswer === null) {
+            alert(`Игра отменена`)
+            break;
+        } else
+        if (parseInt(userAnswer) === quiz[a].correctAnswer || userAnswer.toLowerCase() === userCorrectAnswer[i].toLowerCase()) {
             i++;
             a++;
-        } else if (userAnswer === null){    
-            alert('Игра отменена ');        
+        } else
+        {    
+            a++;        
             }
         }
         alert(`Правильных ответов у тебя - ${i}`)

@@ -3,6 +3,11 @@ function rockPaperScissorsGame() {
     let userVariant =  prompt(`Выбери один из вариантов: ${variants}`);
     let randomIndex = Math.floor(Math.random() * variants.length);
     let randomVariantСomputer = variants[randomIndex]
+    if (userVariant === null){
+        
+        alert('Игра отменена')
+        
+    } else
     if (userVariant.toLowerCase() === randomVariantСomputer.toLowerCase()) {
         alert(`Ваш выбор - ${userVariant}, а выбор компьютера - ${randomVariantСomputer}
         Результат: Ничья` 
@@ -40,12 +45,7 @@ function rockPaperScissorsGame() {
             Результат: Ты проиграл` 
         ) 
     }
-    else 
-    if (userVariant === null){
-        
-        alert('Игра отменена')
-        
-    } else {
+    else {
         alert(`Вы ввели не коректное значение. 
             Вариант должен быть - камень, ножницы или  бумага` )
     }
