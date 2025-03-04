@@ -364,10 +364,10 @@ a {
     text-align: center;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 767px) and (max-width: 1024px) {
   .center {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .top {
     background-image: url(img/Vector.png), url(img/star2.svg), url(img/star3.svg), url(img/star5.svg), url(img/star4.svg);
@@ -390,5 +390,8 @@ a {
   }
   .game__imeg {
     max-width: 400px;
+  }
+  .game__info {
+    padding: 14px;
   }
 }/*# sourceMappingURL=style.css.map */
