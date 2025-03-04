@@ -3,17 +3,23 @@
 // 'js'
 //  в верхний регистр.
 
-// 'js'.toLowerCase()
+'js'.toLowerCase()
 
 
 // Задание 2
 // Создать функцию, которая принимает массив строк и строку. Функция должна вернуть новый массив, содержащий только те элементы первого массива, которые начинаются со второй строки. Регистр символов не влияет на результат.
 
-const b =[]
-function functions(a, c) {
-    
+
+function functions(a , str ) {
+    let result = [];
+    for (let i = 0; i < a.length; i++) {
+        if (a[i].toLowerCase().startsWith(str.toLowerCase())){
+            result.push(a[i])
+        }
+    }
+    return result
 }
-alert(functions(['Привет', 'привет как', 'дела' ], 'Хорошо'))
+console.log(functions(['Привет', 'привет как', 'дела хорошо' ], 'прив'))
 // Задание 3
 // Округлить число 32.58884:
 let a = 32.58884;
@@ -29,13 +35,13 @@ Math.round(a);
 // Задание 4
 // Найти минимальное и максимальное значения из чисел 52, 53, 49, 77, 21, 32 и вывести их в консоль.
 
-console.log(Math.max([52, 53, 49, 77, 21, 32]))
-console.log(Math.min[52, 53, 49, 77, 21, 32])
+console.log(Math.max(52, 53, 49, 77, 21, 32))
+console.log(Math.min(52, 53, 49, 77, 21, 32))
 
 
 // Задание 5
 // Создать функцию, которая выводит в консоль случайное число от 1 до 10.
-console.log(Math.random() * 10)
+console.log(Math.floor(Math.random() * 10) + 1)
 
 
 
