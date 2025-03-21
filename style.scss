@@ -21,11 +21,11 @@ a{
 
 .top{
     background-color: #E1FF8F;
-    background-image:url(img/bigstar.png), url(img/star2.svg),url(img/star3.svg),url(img/star5.svg),url(img/star4.svg);
+    background-image:url(img/bigstar.png), url(img/star2.svg),url(img/star3.svg),url(img/star4.svg),url(img/star5.svg);
     background-position: right 0px top 0px, 63px 94px, 156px 69px, right 344px bottom 149px, right 455px bottom 225px;
     background-repeat: no-repeat;
     padding-top: 196px;
-    padding-bottom: 156px;
+    padding-bottom: 156px;  
     &__title{
         font-size: 64px;
         font-weight: 700;
