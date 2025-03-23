@@ -16,110 +16,54 @@
 
     <h1 class="title-task1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, necessitatibus?</h1>
     <button class="btn-task1" >Скрыть</button>
-    <script>
-        const titleTask1El = document.querySelector('.title-task1');
-        const btnTask1El = document.querySelector('.btn-task1');
-        btnTask1El.addEventListener('click', function () {
-            
-            if (titleTask1El.style.display === "none") {
-            titleTask1El.style.display = "block";
-            btnTask1El.textContent = 'Скрыть';
-            } else {
-            titleTask1El.style.display = "none";
-            btnTask1El.textContent = 'Показать';
-            
-            }
-            
-        })  
-    </script>
     
 
     <h2>Задача 2</h2>
     
     <p class="text-task2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta dignissimos laboriosam illum facilis deserunt reprehenderit sed fuga rem, iste facere temporibus, maxime animi velit ad perferendis a! Voluptas, porro explicabo.</p>
     <button class="btn-task2">Изменить цвет</button>
-    <script>
-        const textTask2El = document.querySelector('.text-task2');
-        const btnTask2El = document.querySelector('.btn-task2');
-        btnTask2El.addEventListener('click', function () {
-            textTask2El.style.color = 'blue';
-        })
-    </script>
+    
 
     <h2>Задача 3</h2>
     
     <h1 class="title-task3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, necessitatibus?</h1>
     <button class="btn-task3" >Изменить текст</button>
-    <script>
-        const titleTask3El = document.querySelector('.title-task3');
-        const btnTask3El = document.querySelector('.btn-task3');
-        btnTask3El.addEventListener('click', function () {
-            titleTask3El.textContent = 'Привет, мир!.';
-        })
-    </script>
+    
     <h2>Задача 4</h2>
     
     <p class="description">Lorem, ipsum dolor sit amet consectetur  d! </p>
     <p class="description">Lorem, ipsum dolor sit amet consectetur  d! </p>
     <p class="description">Lorem, ipsum dolor sit amet consectetur  d! </p>
     <button class="btn-task4">Изменить тексты</button>
-    <script>
-        const descriptionEl = document.querySelectorAll(".description");
-        const btnTask4El = document.querySelector('.btn-task4');
-        btnTask4El.addEventListener('click', function () {
-            descriptionEl.forEach(item => {
-                item.textContent = 'Измененный текст';
-            });
-        });
-    </script>
-
+    
+    
     <h2>Задача 5</h2>
       
-    <p class="description">Lorem, ipsum dolor sit amet consectetur  d! </p>
+    <p class="description5">'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, earum eveniet.'</p>
     <p class="text1">Lorem, ipsum dolor.</p>
-    <p class="description">Lorem, ipsum dolor sit amet consectetur  d! </p>
+    <p class="description5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, earum eveniet.</p>
     <p class="text2">Lorem ipsum dolor sit amet.</p>
-    <p class="description">Lorem, ipsum dolor sit amet consectetur  d! </p>
+    <p class="description5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, earum eveniet.</p>
     <button class="btn-task5">Изменить некоторые параграфы</button>
-    <script>
-        const description5El = document.querySelectorAll('.description');
-        const btnTask5El = document.querySelector('.btn-task5');
-        btnTask5El.addEventListener('click', function () {
-            description5El.forEach(i => {
-                i.textContent = 'Новый текст';
-            }); 
-        })
-    </script>
+
+
     <h2>Задача 6</h2>
 
     <button class="btn-task6" >Добавить элемент</button>
-    <p>Lorem, ipsum.</p>
-    <p>Lorem, ipsum.</p>
-    <p class="text-task7">Lorem, ipsum.</p>
-    <script>
-        const btnTask6El = document.querySelector('.btn-task6');
-        const appendChildParagraph = document.querySelector('p');
-        btnTask6El.addEventListener('click', function () {
-            const newText = document.createElement('p');
-            newText.textContent = 'Новый абзац';
-            document.body.append(newText);
-        })
-    </script>
+    <div class="new-content"></div>
+
+
     <h2>Задача 7</h2>
     
-    <p class="description">Это текст будет удален, при нажатии на кнопку "Удалить элемент"</p>
-    <p class="text1">Lorem, ipsum dolor.</p>
-    <p class="description">Lorem, ipsum dolor sit amet consectetur  d! </p>
-    <p class="text2">Lorem ipsum dolor sit amet.</p>
-    <p class="description">Lorem, ipsum dolor sit amet consectetur  d! </p>
+    <p class="description7">Этот текст будет удален!!!!!!!!!</p>
+    <p class="tecst">Lorem ipsum dolor sit amet.</p>
+    <p class="description7"> что то тот цсыфсол</p>
+    <p class="tecst">Lorem ipsum dolor sit amet.</p>
+    <p class="description7">амывмам мы м МВАма</p>
+    <p class="tecst">Lorem ipsum dolor sit amet.</p>
     <button class="btn-task7">Удалить элемент</button>
-    <script>
-        const descriptionRemoveEl = document.querySelector(".description");
-        const btnTask7El = document.querySelector('.btn-task7');
-        btnTask7El.addEventListener('click', function () {
-            descriptionRemoveEl.firstChild.remove();
-        })
-    </script>
+   
+    <script src="hw9.js"></script>
 </body>
 
 </html>
