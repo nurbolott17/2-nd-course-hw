@@ -7,27 +7,27 @@
     .top{
         background-color: #E1FF8F;
         background-image:url(img/Vector.png), url(img/mobilstar2.png),url(img/mobilstar3.png),url(img/mobil.png),url(img/mobilstar5.png);
-        background-position: right 0px top 0px, 37px 97px, 91px 64px, right 34px bottom 79px, right 86px bottom 125px;
+        background-position: right 0px top 0px, 37px 97px, 91px 64px, right 34px bottom 28px, right 86px bottom 74px;
         background-repeat: no-repeat;
-        padding-top:147px ;
+        padding-top:147px;
         padding-bottom: 131px;
         &__title{
-            font-size: 40px;
             font-weight: 700;
-            line-height: 49px;
+            font-size: 40px;
+            line-height: 100%;
             letter-spacing: 0px;
             text-align: center;
-            color: rgb(32, 32, 39);
+            vertical-align: middle;            
             padding-bottom: 24px;
         }
         
         &__text{
-            color: rgb(32, 32, 39);
-            font-size: 16px;
             font-weight: 400;
-            line-height: 20px;
+            font-size: 16px;
+            line-height: 100%;
             letter-spacing: 0px;
             text-align: center;
+            vertical-align: middle;
             padding-bottom: 36px;
         }
         &__link-box{
@@ -47,7 +47,11 @@
             line-height: 141.69%;
             letter-spacing: 0%;
             text-align: center;
-            color: rgb(255, 255, 255);
+            &:hover{
+                color: #FFFFFF;
+                background-color:#202027;
+                transition: 0;
+            }
         }
     }
     .animation{
@@ -59,8 +63,8 @@
     }
     .section-games{
         background-image: none;
+        padding-top: 48px;
         &__heading{
-            padding-top: 48px;
             padding-bottom: 48px;
             font-size: 40px;
             font-weight: 700;
@@ -83,7 +87,7 @@
             order:  -1;
         }       
         &__info{
-            padding: 29px;
+            padding: 29px 29px 29px 32px;
             width: auto;   
         }
         &__name{
@@ -112,6 +116,12 @@
             line-height: 141.69%;
             letter-spacing: 0%;
             text-align: center;
+            &:hover{
+                background-color:#202027 ;
+                border: 1px solid #202027;
+                color: #FFFFFF;
+                transition: 1s;
+            }
         }
     }
     

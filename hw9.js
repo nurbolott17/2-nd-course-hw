@@ -68,13 +68,12 @@ function changeTexts5() {
 
 function addText() {
     const btnTask6El = document.querySelector('.btn-task6');
-    const appendChildParagraph = document.querySelector('p');
+    const newContentEl = document.querySelector('.new-content');
     btnTask6El.addEventListener('click', function () {
         const newText = document.createElement('p');
         newText.textContent = 'Новый абзац';
-        document.body.append(newText);
-    });
-}
+        newContentEl.appendChild(newText);
+})}
 
 
 // Задача 7
