@@ -62,11 +62,10 @@ btnTask6El.addEventListener('click', function () {
 });
 
 // Задача 7
-
-const description7El = document.querySelector('.description7');
 const btnTask7El = document.querySelector('.btn-task7');
-console.log(description7El);
+
 
 btnTask7El.addEventListener('click', function () {
+    const description7El = document.querySelector('.description7')
     description7El.firstChild.remove();
 })
