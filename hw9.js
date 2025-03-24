@@ -65,5 +65,7 @@ btnTask6El.addEventListener('click', function () {
 const btnTask7El = document.querySelector('.btn-task7');
 btnTask7El.addEventListener('click', function () {
     const description7El = document.querySelector('.description7')
-    description7El.remove();
+    if (description7El) { 
+        description7El.remove();
+    }
 });
