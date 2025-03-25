@@ -60,6 +60,8 @@ function addText() {
         newContentEl.appendChild(newText);
 })}
 
+
+
 // Задача 7
 const btnTask7El = document.querySelector('.btn-task7');
 btnTask7El.addEventListener('click', function () {
