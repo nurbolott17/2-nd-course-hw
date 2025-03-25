@@ -7,34 +7,35 @@
     .top{
         background-color: #E1FF8F;
         background-image:url(img/Vector.png), url(img/mobilstar2.png),url(img/mobilstar3.png),url(img/mobil.png),url(img/mobilstar5.png);
-        background-position: right 0px top 0px, 37px 97px, 91px 64px, right 34px bottom 79px, right 86px bottom 125px;
+        background-position: right 0px top 0px, 37px 97px, 91px 64px, right 34px bottom 28px, right 86px bottom 74px;
         background-repeat: no-repeat;
-        padding-top:147px ;
+        padding-top:147px;
         padding-bottom: 131px;
         &__title{
-            font-size: 40px;
             font-weight: 700;
-            line-height: 49px;
+            font-size: 40px;
+            line-height: 100%;
             letter-spacing: 0px;
             text-align: center;
-            color: rgb(32, 32, 39);
+            vertical-align: middle;            
             padding-bottom: 24px;
         }
         
         &__text{
-            color: rgb(32, 32, 39);
-            font-size: 16px;
             font-weight: 400;
-            line-height: 20px;
+            font-size: 16px;
+            line-height: 100%;
             letter-spacing: 0px;
             text-align: center;
+            vertical-align: middle;
             padding-bottom: 36px;
         }
-        &__link-box{
+        &__btn-box{
             display: flex;
             justify-content: center;
         }
-        &__link{
+        &__btn{
+            font-family: inherit;
             box-sizing: border-box;
             border: 1px solid rgb(32, 32, 39);
             border-radius: 60px;
@@ -47,26 +48,49 @@
             line-height: 141.69%;
             letter-spacing: 0%;
             text-align: center;
-            color: rgb(255, 255, 255);
+            &:hover{
+                color: #FFFFFF;
+                background-color:#202027;
+                transition: 0;
+            }
         }
     }
-    .animation{
-        height: 51px;
+    .animation{  
         background-color: rgb(188, 236, 48);
+        overflow: hidden;
+        &-box{
+            animation: scroll-left 15s linear infinite;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 3220px;
+            height: 20px;
+            padding: 16px 24px 16px 24px;   
+            gap: 28px;
+            &__label{ 
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 110.00000000000001%;
+                letter-spacing: 4%;
+                vertical-align: middle;
+                text-transform: uppercase;
+              }
+            }
     }
     .content{
         display: none;
     }
     .section-games{
         background-image: none;
+        padding-top: 48px;
         &__heading{
-            padding-top: 48px;
             padding-bottom: 48px;
             font-size: 40px;
             font-weight: 700;
             line-height: 49px; 
         }
     }
+
 
     .games{
         padding-bottom: 48px;
@@ -83,7 +107,7 @@
             order:  -1;
         }       
         &__info{
-            padding: 29px;
+            padding: 29px 29px 29px 32px;
             width: auto;   
         }
         &__name{
@@ -105,13 +129,18 @@
         }
 
         &__btn{
-            width: 285px;
             height: 55px;
             font-size: 16px;
             font-weight: 600;
             line-height: 141.69%;
             letter-spacing: 0%;
             text-align: center;
+            &:hover{
+                background-color:#202027 ;
+                border: 1px solid #202027;
+                color: #FFFFFF;
+                transition: 1s;
+            }
         }
     }
     
