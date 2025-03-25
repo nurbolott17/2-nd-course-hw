@@ -418,12 +418,11 @@ a {
     padding-bottom: 100px;
   }
   .content__heading {
-    padding-top: 26px;
+    padding-top: 56px;
     padding-bottom: 32px;
   }
   .game__imeg {
     max-width: 400px;
-    max-height: 338px;
   }
   .game__info {
     padding: 14px;
