@@ -50,8 +50,12 @@ a{
         text-align: left;
         padding-bottom: 48px;
     }
-    
-    &__link{
+    &__btn-box{
+        display: flex;
+        justify-content: center;
+    }
+    &__btn{
+        font-family: inherit;
         box-sizing: border-box;
         border: 1px solid #202027;
         border-radius: 60px;
@@ -73,25 +77,22 @@ a{
             cursor: pointer;
         }
     }
-}
+    }
+
 
 .animation{  
-    height: 90px;
-    width: 3220px;
-    display:inline-flex;
-    overflow: hidden;
-    
     background-color: rgb(188, 236, 48);
+    overflow: hidden;
     &-box{
-        overflow: hidden;
-        animation: scroll-left 10s linear infinite;
+        animation: scroll-left 15s linear infinite;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
+        width: 3220px;
+        height: 36px;
         padding: 27px 49px 27px 49px;   
         gap: 51px;
         &__label{
-            overflow: hidden;
             color: #202027;
             font-weight: 700;
             font-size: 30px;
@@ -99,8 +100,11 @@ a{
             letter-spacing: 4%;
             vertical-align: middle;
             text-transform: uppercase;
-
-          }
+        }
+        &__img{
+            width: 20px;
+            height: 20px;
+        }
         }
 }
     

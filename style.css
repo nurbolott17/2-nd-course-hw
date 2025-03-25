@@ -51,7 +51,12 @@ a {
   text-align: left;
   padding-bottom: 48px;
 }
-.top__link {
+.top__btn-box {
+  display: flex;
+  justify-content: center;
+}
+.top__btn {
+  font-family: inherit;
   box-sizing: border-box;
   border: 1px solid #202027;
   border-radius: 60px;
@@ -67,7 +72,7 @@ a {
   color: #FFFFFF;
   transition: 1s;
 }
-.top__link:hover {
+.top__btn:hover {
   color: #202027;
   background-color: #FFFFFF;
   transition: 1s;
@@ -75,23 +80,20 @@ a {
 }
 
 .animation {
-  height: 90px;
-  width: 3220px;
-  display: inline-flex;
-  overflow: hidden;
   background-color: rgb(188, 236, 48);
+  overflow: hidden;
 }
 .animation-box {
-  overflow: hidden;
-  animation: scroll-left 10s linear infinite;
+  animation: scroll-left 15s linear infinite;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  width: 3220px;
+  height: 36px;
   padding: 27px 49px 27px 49px;
   gap: 51px;
 }
 .animation-box__label {
-  overflow: hidden;
   color: #202027;
   font-weight: 700;
   font-size: 30px;
@@ -99,6 +101,10 @@ a {
   letter-spacing: 4%;
   vertical-align: middle;
   text-transform: uppercase;
+}
+.animation-box__img {
+  width: 20px;
+  height: 20px;
 }
 
 .content {
@@ -307,11 +313,12 @@ a {
     vertical-align: middle;
     padding-bottom: 36px;
   }
-  .top__link-box {
+  .top__btn-box {
     display: flex;
     justify-content: center;
   }
-  .top__link {
+  .top__btn {
+    font-family: inherit;
     box-sizing: border-box;
     border: 1px solid rgb(32, 32, 39);
     border-radius: 60px;
@@ -325,14 +332,32 @@ a {
     letter-spacing: 0%;
     text-align: center;
   }
-  .top__link:hover {
+  .top__btn:hover {
     color: #FFFFFF;
     background-color: #202027;
     transition: 0;
   }
   .animation {
-    height: 51px;
     background-color: rgb(188, 236, 48);
+    overflow: hidden;
+  }
+  .animation-box {
+    animation: scroll-left 15s linear infinite;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 3220px;
+    height: 20px;
+    padding: 16px 24px 16px 24px;
+    gap: 28px;
+  }
+  .animation-box__label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 110%;
+    letter-spacing: 4%;
+    vertical-align: middle;
+    text-transform: uppercase;
   }
   .content {
     display: none;
@@ -382,7 +407,6 @@ a {
     text-align: left;
   }
   .game__btn {
-    width: 285px;
     height: 55px;
     font-size: 16px;
     font-weight: 600;
@@ -427,7 +451,7 @@ a {
     padding-bottom: 100px;
   }
   .content__heading {
-    padding-top: 26px;
+    padding-top: 56px;
     padding-bottom: 32px;
   }
   .game__imeg {

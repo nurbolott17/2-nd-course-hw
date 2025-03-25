@@ -30,11 +30,12 @@
             vertical-align: middle;
             padding-bottom: 36px;
         }
-        &__link-box{
+        &__btn-box{
             display: flex;
             justify-content: center;
         }
-        &__link{
+        &__btn{
+            font-family: inherit;
             box-sizing: border-box;
             border: 1px solid rgb(32, 32, 39);
             border-radius: 60px;
@@ -54,9 +55,27 @@
             }
         }
     }
-    .animation{
-        height: 51px;
+    .animation{  
         background-color: rgb(188, 236, 48);
+        overflow: hidden;
+        &-box{
+            animation: scroll-left 15s linear infinite;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 3220px;
+            height: 20px;
+            padding: 16px 24px 16px 24px;   
+            gap: 28px;
+            &__label{ 
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 110.00000000000001%;
+                letter-spacing: 4%;
+                vertical-align: middle;
+                text-transform: uppercase;
+              }
+            }
     }
     .content{
         display: none;
@@ -72,7 +91,7 @@
         }
     }
 
-    
+
     .games{
         padding-bottom: 48px;
         gap: 24px;  
@@ -110,7 +129,6 @@
         }
 
         &__btn{
-            width: 285px;
             height: 55px;
             font-size: 16px;
             font-weight: 600;
