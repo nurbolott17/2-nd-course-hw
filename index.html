@@ -13,22 +13,37 @@
     <section class="top center">
         <h1 class="top__title" >Добро пожаловать <br> на мой сайт мини-игр</h1>
         <p class="top__text">Тебе предстоит пройти несколько увлекательных игр. <br>Если готов, нажимай <b>«Поехали!»</b> и <b>приступай</b>.</p>
-        <div class="top__link-box">
-            <a class="top__link" href="#BlockGames">Поехали!</a>
-        </div>  
+        <div class="top__btn-box">
+            <button class="top__btn">Поехали!</button> 
+        </div>
     </section>
-    <div class="animation">   
+    <div class="animation center">  
+        <div class="animation-box">
+            <span class="animation-box__label"><b>Викторина</b></span>
+            <img class="animation-box__img" src="./img/Star.svg" alt="star">
+            <span class="animation-box__label"><b>Угадай число</b></span>
+            <img class="animation-box__img" src="./img/Star.svg" alt="star">
+            <span class="animation-box__label"><b>Переверни текст</b></span>
+            <img class="animation-box__img" src="./img/Star.svg" alt="star">
+            <span class="animation-box__label"><b>Простая арифметика</b></span>
+            <img class="animation-box__img" src="./img/Star.svg" alt="star">
+            <span class="animation-box__label"><b>Камень, ножницы, бумага</b></span>
+            <img class="animation-box__img" src="./img/Star.svg" alt="star">
+            <span class="animation-box__label"><b>Генератор случайных цветов</b></span>
+            <img class="animation-box__img" src="./img/Star.svg" alt="star">   
+        </div>
+        
     </div>
     
     <section class="content center">
-        <h2 class="content__heading" id="BlockGames">Об играх</h2>
+        <h2 class="content__heading" id="blockGames">Об играх</h2>
         <p class="content__text">В моей коллекции представлено 6 игр на разные темы. <br>Игры несложные — в них может поиграть каждый. <br> Все игры доступны для пользования.</p>
         <div class="cards">
             <a class="cards__link" href="#play-game1">
                 <article class="card">
                     <img class="card__imeg" src="./img/game1.png" alt="игра №1">
                     <div class="card__info">
-                        <p class="card__number">игра №1</p>
+                        <p class="card__number">Игра № 1</p>
                         <h3 class="card__name">Угадай число</h3>
                     </div>
                 </article>
@@ -37,7 +52,7 @@
                 <article class="card">
                     <img class="card__imeg" src="./img/game2.png" alt="игра №2">
                     <div class="card__info">
-                        <p class="card__number">игра №2</p>
+                        <p class="card__number">Игра № 2</p>
                         <h3 class="card__name">Простая <br>арифметика</h3>
                     </div>    
                 </article>
@@ -46,7 +61,7 @@
                 <article class="card">
                     <img class="card__imeg" src="./img/game3.png" alt="игра №3">
                     <div class="card__info">
-                        <p class="card__number">игра №3</p>
+                        <p class="card__number">Игра № 3</p>
                         <h3 class="card__name">Переверни текст</h3>
                     </div>    
                 </article>
@@ -55,7 +70,7 @@
                 <article class="card">
                     <img class="card__imeg" src="./img/game4.png" alt="игра №4">
                     <div class="card__info">
-                        <p class="card__number">игра №4</p>
+                        <p class="card__number">Игра № 4</p>
                         <h3 class="card__name">Камень,<br> ножницы, <br>бумага</h3>
                     </div>
                 </article>
@@ -64,7 +79,7 @@
                 <article class="card">
                     <img class="card__imeg" src="./img/game6.png" alt="игра №6">
                     <div class="card__info">
-                        <p class="card__number">игра №6</p>
+                        <p class="card__number">Игра № 6</p>
                         <h3 class="card__name">Генератор <br> случайных <br>цветов</h3>
                     </div>    
                 </article>
@@ -73,7 +88,7 @@
                 <article class="card">
                     <img class="card__imeg" src="./img/game5.png" alt="игра №5">
                     <div class="card__info">
-                        <p class="card__number">игра №5</p>
+                        <p class="card__number">игра № 5</p>
                         <h3 class="card__name">Простая <br>викторина</h3>
                     </div>                
                 </article>
@@ -81,7 +96,7 @@
         </div>
     </section>  
     <section class="section-games center" >
-        <h2 class="section-games__heading">Мини-игры</h2>
+        <h2 class="section-games__heading" id="games">Мини-игры</h2>
         <div class="games">
             <article class="game" id="play-game1" >
                 <div class="game__info">
@@ -127,8 +142,8 @@
                 <img class="game__imeg" src="./img/playimg6.png" alt="игра №6">
                 <div class="game__info">
                     <h3 class="game__name">Генератор <br>случайных <br>цветов</h3>
-                    <p class="game__description">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p> 
-                    <button class="game__btn" id = "btn-game6" onclick="chargeColorBackground()">Играть!</button>
+                    <p class="game__description" id="game6">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p> 
+                    <button class="game__btn" id = "btn-game6"> Играть!</button>
                 </div>
             </article>    
         </div>
@@ -142,6 +157,6 @@
     <script src="game4.js"></script>
     <script src="game5.js"></script>
     <script src="game6.js"></script>
-     
+    
 </body>
 </html>
