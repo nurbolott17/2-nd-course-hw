@@ -59,6 +59,7 @@ btnTask6El.addEventListener('click', function () {
     const newText = document.createElement('p');
     newText.textContent = 'Новый абзац';
     newContentEl.appendChild(newText);
+    
 });
 
 // Задача 7
