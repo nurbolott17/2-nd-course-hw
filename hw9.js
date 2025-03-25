@@ -1,7 +1,5 @@
 // Задача 1
-
-
-    
+ 
 const titleTask1El = document.querySelector('.title-task1');
 const btnTask1El = document.querySelector('.btn-task1');
 btnTask1El.addEventListener('click', function () { 
