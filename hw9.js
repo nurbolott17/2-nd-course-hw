@@ -51,13 +51,14 @@ btnTask5El.addEventListener('click', function () {
 
 // Задача 6
 
-const btnTask6El = document.querySelector('.btn-task6');
-const newContentEl = document.querySelector('.new-content');
-btnTask6El.addEventListener('click', function () {
-    const newText = document.createElement('p');
-    newText.textContent = 'Новый абзац';
-    newContentEl.appendChild(newText);
-});
+function addText() {
+    const btnTask6El = document.querySelector('.btn-task6');
+    const newContentEl = document.querySelector('.new-content');
+    btnTask6El.addEventListener('click', function () {
+        const newText = document.createElement('p');
+        newText.textContent = 'Новый абзац';
+        newContentEl.appendChild(newText);
+})}
 
 // Задача 7
 const btnTask7El = document.querySelector('.btn-task7');
