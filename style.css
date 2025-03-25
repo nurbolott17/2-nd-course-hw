@@ -51,10 +51,6 @@ a {
   text-align: left;
   padding-bottom: 48px;
 }
-.top__btn-box {
-  display: flex;
-  justify-content: center;
-}
 .top__btn {
   font-family: inherit;
   box-sizing: border-box;
