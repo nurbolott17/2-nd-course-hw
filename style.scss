@@ -23,24 +23,24 @@ a{
 
 .top{
     background-color: #E1FF8F;
-    background-image:url(img/bigstar.png), url(img/star2.svg),url(img/star3.svg),url(img/star5.svg),url(img/star4.svg);
-    background-position: right 0px top 0px, 63px 94px, 156px 69px, right 344px bottom 149px, right 455px bottom 225px;
+    background-image:url(img/bigstar.png), url(img/star2.svg),url(img/star3.svg),url(img/star4.svg),url(img/star5.svg);
+    background-position: right 0px top 0px, 63px 94px, 156px 69px, right 344px top 568px, right 455px top 538px;
     background-repeat: no-repeat;
     padding-top: 196px;
     padding-right: 431px;
     padding-bottom: 156px;
     &__title{
-        font-weight: 700;
         font-size: 64px;
-        line-height: 100%;
+        font-weight: 700;
+        line-height: 78px;
         letter-spacing: 0px;
-        vertical-align: middle;
         text-align: left;
         color: #202027;
         padding-bottom: 24px;
     }
     
     &__text{
+        max-width: 720px;
         color: #202027;
         font-weight: 400;
         font-size: 24px;
@@ -97,10 +97,7 @@ a{
             vertical-align: middle;
             text-transform: uppercase;
         }
-        &__img{
-            width: 20px;
-            height: 20px;
-        }
+        
         }
 }
     
@@ -109,7 +106,7 @@ a{
 .content{
     background-color: #202027;
     background-image: url(img/Star\ 1.png),url(img/Star\ 11.png),url(img/Star\ 12.png);
-    background-position: right 0px  top 77px, 25px 770px, 40px 822px;
+    background-position: right 0px  top 110px, 25px 770px, 40px 822px;
     background-repeat: no-repeat;
     &__heading{
         color: #FFFFFF;
@@ -117,7 +114,7 @@ a{
         padding-top: 94px;
         font-weight: 700;
         font-size: 64px;
-        line-height: 100%;
+        line-height: 78px;
         letter-spacing: 0px;
         vertical-align: middle;
 
@@ -141,7 +138,8 @@ a{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    gap: 32px;
+    row-gap: 30px;
+    column-gap: 32px;
     &__link{
         border-radius: 30px;
         grid-column: span 4;
@@ -167,11 +165,11 @@ a{
     }
 
     &__imeg{
-        max-width: 100%;
+        max-width: 100%
     }
 
     &__info{
-        padding: 32px 32px 36px 32px;
+        padding: 29px 32px 36px 31px;
     }
     
     &__number{
@@ -193,7 +191,7 @@ a{
         color: #202027;
         font-weight: 700;
         font-size: 32px;    
-        line-height: 100%;
+        line-height: 39px;
         letter-spacing: 0px;
         vertical-align: middle;
 
@@ -210,7 +208,7 @@ a{
         padding-bottom: 72px;
         font-weight: 700;
         font-size: 64px;
-        line-height: 100%;
+        line-height: 78px;
         letter-spacing: 0px;
         vertical-align: middle;
         color: #FFFFFF;
@@ -225,6 +223,7 @@ a{
  
 
 .game{
+    max-width: 1200px;
     border-radius: 30px;
     background-color: #FFFFFF;
     display: flex;
@@ -232,16 +231,17 @@ a{
     justify-content: space-between;
     &__info{
         padding: 48px;
-        width: 600px;
+        width: 504px;
     }
     &__name{
         padding-bottom: 24px;
         font-weight: 700;
         font-size: 48px;
-        line-height: 100%;
+        line-height: 59px;
         letter-spacing: 0px;
         vertical-align: middle;
         color: #202027;
+        
     }
 
     &__description{
@@ -252,6 +252,7 @@ a{
         letter-spacing: 0px;
         vertical-align: middle;
         color: #202027;
+        max-width: 500px;
     }
 
     &__btn{

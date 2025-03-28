@@ -13,10 +13,11 @@ btnEl.addEventListener('click', function() {
 
 
 const topBtnEl = document.querySelector('.top__btn');
-const blockGamesEl = document.getElementById('blockGames')
-const gamesEl = document.getElementById('games')
 topBtnEl.addEventListener('click', function (){
-    if (blockGamesEl) {
+    const gamesEl = document.getElementById('games')
+    const isBlockElHidden =  window.getComputedStyle(document.querySelector(".content")).display === "none";
+    
+    if (!isBlockElHidden) {
         element = document.getElementById("blockGames");
         element.scrollIntoView(true);
     } else if (gamesEl){

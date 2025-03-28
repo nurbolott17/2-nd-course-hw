@@ -24,24 +24,24 @@ a {
 
 .top {
   background-color: #E1FF8F;
-  background-image: url(img/bigstar.png), url(img/star2.svg), url(img/star3.svg), url(img/star5.svg), url(img/star4.svg);
-  background-position: right 0px top 0px, 63px 94px, 156px 69px, right 344px bottom 149px, right 455px bottom 225px;
+  background-image: url(img/bigstar.png), url(img/star2.svg), url(img/star3.svg), url(img/star4.svg), url(img/star5.svg);
+  background-position: right 0px top 0px, 63px 94px, 156px 69px, right 344px top 568px, right 455px top 538px;
   background-repeat: no-repeat;
   padding-top: 196px;
   padding-right: 431px;
   padding-bottom: 156px;
 }
 .top__title {
-  font-weight: 700;
   font-size: 64px;
-  line-height: 100%;
+  font-weight: 700;
+  line-height: 78px;
   letter-spacing: 0px;
-  vertical-align: middle;
   text-align: left;
   color: #202027;
   padding-bottom: 24px;
 }
 .top__text {
+  max-width: 720px;
   color: #202027;
   font-weight: 400;
   font-size: 24px;
@@ -98,15 +98,11 @@ a {
   vertical-align: middle;
   text-transform: uppercase;
 }
-.animation-box__img {
-  width: 20px;
-  height: 20px;
-}
 
 .content {
   background-color: #202027;
   background-image: url(img/Star\ 1.png), url(img/Star\ 11.png), url(img/Star\ 12.png);
-  background-position: right 0px top 77px, 25px 770px, 40px 822px;
+  background-position: right 0px top 110px, 25px 770px, 40px 822px;
   background-repeat: no-repeat;
 }
 .content__heading {
@@ -115,7 +111,7 @@ a {
   padding-top: 94px;
   font-weight: 700;
   font-size: 64px;
-  line-height: 100%;
+  line-height: 78px;
   letter-spacing: 0px;
   vertical-align: middle;
 }
@@ -136,7 +132,9 @@ a {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
-  gap: 32px;
+  row-gap: 30px;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
 }
 .cards__link {
   border-radius: 30px;
@@ -163,7 +161,7 @@ a {
   max-width: 100%;
 }
 .card__info {
-  padding: 32px 32px 36px 32px;
+  padding: 29px 32px 36px 31px;
 }
 .card__number {
   background-color: #F7F7F7;
@@ -183,7 +181,7 @@ a {
   color: #202027;
   font-weight: 700;
   font-size: 32px;
-  line-height: 100%;
+  line-height: 39px;
   letter-spacing: 0px;
   vertical-align: middle;
 }
@@ -199,7 +197,7 @@ a {
   padding-bottom: 72px;
   font-weight: 700;
   font-size: 64px;
-  line-height: 100%;
+  line-height: 78px;
   letter-spacing: 0px;
   vertical-align: middle;
   color: #FFFFFF;
@@ -213,6 +211,7 @@ a {
 }
 
 .game {
+  max-width: 1200px;
   border-radius: 30px;
   background-color: #FFFFFF;
   display: flex;
@@ -221,13 +220,13 @@ a {
 }
 .game__info {
   padding: 48px;
-  width: 600px;
+  width: 504px;
 }
 .game__name {
   padding-bottom: 24px;
   font-weight: 700;
   font-size: 48px;
-  line-height: 100%;
+  line-height: 59px;
   letter-spacing: 0px;
   vertical-align: middle;
   color: #202027;
@@ -240,6 +239,7 @@ a {
   letter-spacing: 0px;
   vertical-align: middle;
   color: #202027;
+  max-width: 500px;
 }
 .game__btn {
   font-family: inherit;
@@ -290,31 +290,25 @@ a {
     background-repeat: no-repeat;
     padding-top: 147px;
     padding-bottom: 131px;
+    margin-left: 4px;
   }
   .top__title {
-    font-weight: 700;
     font-size: 40px;
-    line-height: 100%;
+    font-weight: 700;
+    line-height: 49px;
     letter-spacing: 0px;
     text-align: center;
-    vertical-align: middle;
     padding-bottom: 24px;
   }
   .top__text {
-    font-weight: 400;
     font-size: 16px;
-    line-height: 100%;
+    font-weight: 400;
+    line-height: 20px;
     letter-spacing: 0px;
     text-align: center;
-    vertical-align: middle;
-    padding-bottom: 36px;
-  }
-  .top__btn-box {
-    display: flex;
-    justify-content: center;
+    padding-bottom: 35px;
   }
   .top__btn {
-    font-family: inherit;
     box-sizing: border-box;
     border: 1px solid rgb(32, 32, 39);
     border-radius: 60px;
@@ -329,9 +323,15 @@ a {
     text-align: center;
   }
   .top__btn:hover {
-    color: #FFFFFF;
     background-color: #202027;
-    transition: 0;
+    border: 1px solid #202027;
+    color: #FFFFFF;
+    transition: 1s;
+    cursor: pointer;
+  }
+  .top__btn-box {
+    display: flex;
+    justify-content: center;
   }
   .animation {
     background-color: rgb(188, 236, 48);
@@ -343,24 +343,29 @@ a {
     justify-content: flex-start;
     align-items: flex-start;
     width: 3220px;
-    height: 20px;
+    height: 18px;
     padding: 16px 24px 16px 24px;
-    gap: 28px;
+    gap: 27px;
   }
   .animation-box__label {
-    font-weight: 700;
+    color: #202027;
     font-size: 16px;
+    font-weight: 700;
     line-height: 110%;
     letter-spacing: 4%;
-    vertical-align: middle;
+    text-align: left;
     text-transform: uppercase;
+  }
+  .animation-box__img {
+    width: 19px;
+    height: 19px;
   }
   .content {
     display: none;
   }
   .section-games {
     background-image: none;
-    padding-top: 48px;
+    padding-top: 51px;
   }
   .section-games__heading {
     padding-bottom: 48px;
@@ -370,11 +375,14 @@ a {
   }
   .games {
     padding-bottom: 48px;
-    gap: 24px;
+    gap: 29px;
+    align-items: center;
   }
   .game {
     display: flex;
     flex-direction: column;
+    max-width: 343px;
+    justify-content: center;
   }
   .game__imeg {
     max-height: 284px;
@@ -383,7 +391,7 @@ a {
     order: -1;
   }
   .game__info {
-    padding: 29px 29px 29px 32px;
+    padding: 29px;
     width: auto;
   }
   .game__name {
@@ -395,14 +403,19 @@ a {
     text-align: left;
   }
   .game__description {
-    padding-bottom: 32px;
+    padding-bottom: 31.5px;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0px;
     text-align: left;
   }
+  .game__description_6 {
+    max-width: 225px;
+    padding-bottom: 31px;
+  }
   .game__btn {
+    width: 285px;
     height: 55px;
     font-size: 16px;
     font-weight: 600;
